@@ -1,0 +1,31 @@
+{
+    "name": "spaceace/forumlegend",
+    "type": "phpbb-extension",
+    "description": "Icon legend for forum and index",
+    "homepage": "http://www.livemembersonly.com",
+    "version": "0.1.0-BETA",
+    "time": "2015-03-13",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "spaceace",
+            "email": "spaceace@livemembersonly.com",
+            "homepage": "http://www.livemembersonly.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "extra": {
+        "display-name": "Forum Legend",
+        "soft-require": {
+             "phpbb/phpbb": "3.1.*@dev"
+        },
+        "version-check": {
+            "host": "www.livemembersonly.com",
+            "directory": "/version",
+            "filename": "forumlegend.json"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+/* ------ Legende folders ------ */
+    ul.legend {
+      padding: 10px 0;
+      text-align: center;
+    }
+   
+   ul.legend li {
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding: 10px 15px 10px 30px;
+    }
+/* ------ End legende folders ------ */

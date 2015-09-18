@@ -3,7 +3,7 @@
     "type": "phpbb-extension",
     "description": "Icon legend for forum and index",
     "homepage": "http://www.livemembersonly.com",
-    "version": "1.0.1-RC2",
+    "version": "1.0.2",
     "time": "2015-03-13",
     "license": "GPL-2.0",
     "authors": [
@@ -20,12 +20,12 @@
     "extra": {
         "display-name": "Forum Legend",
         "soft-require": {
-             "phpbb/phpbb": "3.1.*@dev"
+            "phpbb/phpbb": "3.1.*@dev"
         },
         "version-check": {
-            "host": "www.livemembersonly.com",
-            "directory": "/version",
-            "filename": "forumlegend.json"
+            "host": "www.phpbb.com",
+            "directory": "/customise/db/extension/forum_legend",
+            "filename": "version_check"
         }
     }
 }

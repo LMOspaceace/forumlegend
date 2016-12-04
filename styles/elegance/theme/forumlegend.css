@@ -1,0 +1,74 @@
+.stat-block.permissions {
+	display: none !important;
+}
+
+.alignleft {
+	float: left;
+	clear: left;
+	width: 50%;
+}
+
+.alignright {
+	float: right;
+	clear: right;
+	text-align: right;
+	width: 50%;
+}
+
+.legend.navbar {
+	text-align: center !important;
+	padding: 4px 0 !important;
+	margin: 0 !important;
+}
+
+.valign span{
+	vertical-align: middle !important;
+}
+
+.howwide {
+	float: left;
+}
+
+.howwide2 {
+	width: auto;
+}
+
+.legend .imageset {
+	margin-bottom: 3px;
+}
+
+.legend span.imageset {
+	width: 36px;
+	height: 36px;
+	letter-spacing: -500px;
+	text-indent: 36px;
+}
+
+.legend  .announce_read													{ background-image: url("./images/announce_read.png"); }
+
+.legend .forum_link														{ background-image: url("./images/forum_link.png"); }
+.legend .forum_read														{ background-image: url("./images/forum_read.png"); }
+.legend .forum_read_locked												{ background-image: url("./images/forum_read_locked.png"); }
+.legend .forum_read_subforum											{ background-image: url("./images/forum_read_subforum.png"); }
+.legend .forum_unread													{ background-image: url("./images/forum_unread.png"); }
+.legend .forum_unread_locked											{ background-image: url("./images/forum_unread_locked.png"); }
+.legend .forum_unread_subforum											{ background-image: url("./images/forum_unread_subforum.png"); }
+
+.legend .sticky_read													{ background-image: url("./images/announce_read.png"); }
+
+.legend .topic_moved													{ background-image: url("./images/topic_moved.png"); }
+.legend .topic_read														{ background-image: url("./images/topic_read.png"); }
+.legend .topic_read_mine												{ background-image: url("./images/topic_read_mine.png"); }
+.legend .topic_read_hot													{ background-image: url("./images/topic_read_hot.png"); }
+.legend .topic_read_hot_mine											{ background-image: url("./images/topic_read_hot_mine.png"); }
+.legend .topic_read_locked												{ background-image: url("./images/topic_read_locked.png"); }
+.legend .topic_read_locked_mine											{ background-image: url("./images/topic_read_locked_mine.png"); }
+.legend .topic_unread													{ background-image: url("./images/topic_unread.png"); }
+.legend .topic_unread_mine												{ background-image: url("./images/topic_unread_mine.png"); }
+.legend .topic_unread_hot												{ background-image: url("./images/topic_unread_hot.png"); }
+.legend .topic_unread_hot_mine											{ background-image: url("./images/topic_unread_hot_mine.png"); }
+.legend .topic_unread_locked											{ background-image: url("./images/topic_unread_locked.png"); }
+.legend .topic_unread_locked_mine										{ background-image: url("./images/topic_unread_locked_mine.png"); }
+
+.legend .topic_read .pm_read														{ background-image: url("./images/topic_read.png"); }
+.legend .topic_unread, .pm_unread														{ background-image: url("./images/topic_unread.png"); }

@@ -36,3 +36,24 @@
 .clear-legend .imageset {
 	margin-bottom: 3px;
 }
+
+/* Legend tweak for phpBB 3.2.x
+----------------------------------------*/
+
+.legend-index span.imageset {
+	display: inline-block !important;
+	margin: 0;
+	padding: 27px 0 0 27px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.clear-legend span.imageset {
+	display: inline-block !important;
+	margin: 0;
+	padding: 27px 0 3px 27px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}

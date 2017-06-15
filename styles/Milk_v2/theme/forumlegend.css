@@ -1,0 +1,60 @@
+.stat-block.permissions {
+	display: none !important;
+}
+
+.alignleft {
+	float: left;
+	clear: left;
+	width: 60%;
+}
+
+.alignright {
+	float: right;
+	clear: right;
+	text-align: right;
+	width: 40%;
+}
+
+.legend-index.navbar {
+	text-align: center !important;
+	padding: 4px 0 !important;
+	margin: 0 !important;
+}
+
+.valign span{
+	vertical-align: middle !important;
+}
+
+.howwide {
+	float: left;
+}
+
+.howwide2 {
+	width: auto;
+}
+
+.clear-legend .imageset {
+	margin-bottom: 3px;
+}
+
+/* Legend tweak for phpBB 3.2.x
+----------------------------------------*/
+
+.legend-index span.imageset {
+	display: inline-block !important;
+	margin: 0;
+	padding: 30px 0 0 30px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.clear-legend span.imageset {
+	display: inline-block !important;
+	margin: 0;
+	padding: 30px 0 3px 30px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,75 @@
+{% INCLUDE 'overall_header.html' %}
+
+<h1>{{ lang('ACP_FORUMLEGEND_TITLE') }}</h1>
+
+<form id="acp_board" method="post" action="{{ U_ACTION }}">
+
+	<fieldset>
+		<legend>{{ lang('SETTINGS') }}</legend>
+		<dl>
+			<dt><label for="forumlegend_enable_disable">{{ lang('ACP_FORUMLEGEND_ENABLE_DISABLE') }}{{ lang('COLON') }}</label></dt>
+			<dd><label><input type="radio" class="radio" name="forumlegend_enable_disable" value="1" {% if FORUMLEGEND_ENABLE_DISABLE %}checked="checked"{% endif %}/> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="forumlegend_enable_disable" value="0" {% if not FORUMLEGEND_ENABLE_DISABLE %}checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<p>{{ lang('ACP_FORUMLEGEND_ICON_SELECT') }}</p>
+		<dl>
+			<dt><label for="forumlegend_icon_1">{{ lang('ACP_FORUMLEGEND_ICON_1') }}{{ lang('COLON') }}</label></dt>
+			<dd><label><input type="radio" class="radio" name="forumlegend_icon_1" value="1" {% if FORUMLEGEND_ICON_1 %}checked="checked"{% endif %}/> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="forumlegend_icon_1" value="0" {% if not FORUMLEGEND_ICON_1 %}checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="forumlegend_icon_2">{{ lang('ACP_FORUMLEGEND_ICON_2') }}{{ lang('COLON') }}</label></dt>
+			<dd><label><input type="radio" class="radio" name="forumlegend_icon_2" value="1" {% if FORUMLEGEND_ICON_2 %}checked="checked"{% endif %}/> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="forumlegend_icon_2" value="0" {% if not FORUMLEGEND_ICON_2 %}checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="forumlegend_icon_3">{{ lang('ACP_FORUMLEGEND_ICON_3') }}{{ lang('COLON') }}</label></dt>
+			<dd><label><input type="radio" class="radio" name="forumlegend_icon_3" value="1" {% if FORUMLEGEND_ICON_3 %}checked="checked"{% endif %}/> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="forumlegend_icon_3" value="0" {% if not FORUMLEGEND_ICON_3 %}checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="forumlegend_icon_4">{{ lang('ACP_FORUMLEGEND_ICON_4') }}{{ lang('COLON') }}</label></dt>
+			<dd><label><input type="radio" class="radio" name="forumlegend_icon_4" value="1" {% if FORUMLEGEND_ICON_4 %}checked="checked"{% endif %}/> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="forumlegend_icon_4" value="0" {% if not FORUMLEGEND_ICON_4 %}checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="forumlegend_icon_5">{{ lang('ACP_FORUMLEGEND_ICON_5') }}{{ lang('COLON') }}</label></dt>
+			<dd><label><input type="radio" class="radio" name="forumlegend_icon_5" value="1" {% if FORUMLEGEND_ICON_5 %}checked="checked"{% endif %}/> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="forumlegend_icon_5" value="0" {% if not FORUMLEGEND_ICON_5 %}checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="forumlegend_icon_6">{{ lang('ACP_FORUMLEGEND_ICON_6') }}{{ lang('COLON') }}</label></dt>
+			<dd><label><input type="radio" class="radio" name="forumlegend_icon_6" value="1" {% if FORUMLEGEND_ICON_6 %}checked="checked"{% endif %}/> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="forumlegend_icon_6" value="0" {% if not FORUMLEGEND_ICON_6 %}checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="forumlegend_icon_7">{{ lang('ACP_FORUMLEGEND_ICON_7') }}{{ lang('COLON') }}</label></dt>
+			<dd><label><input type="radio" class="radio" name="forumlegend_icon_7" value="1" {% if FORUMLEGEND_ICON_7 %}checked="checked"{% endif %}/> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="forumlegend_icon_7" value="0" {% if not FORUMLEGEND_ICON_7 %}checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<p>{{ lang('ACP_FORUMLEGEND_WIDTH_SETTING') }}</p>
+		<dl>
+			<dt><label for="forumlegend_left_width">{{ lang('ACP_FORUMLEGEND_LEFT_WIDTH') }}{{ lang('COLON') }}</label><br />
+			</dt>
+			<dd><br>
+				<input name="forumlegend_left_width" type="number" min="0" id="forumlegend_left_width" value="{{ FORUMLEGEND_LEFT_WIDTH }}" size="4" maxlength="4" />
+			</dd>
+		</dl>
+		<dl>
+			<dt><label for="forumlegend_right_width">{{ lang('ACP_FORUMLEGEND_RIGHT_WIDTH') }}{{ lang('COLON') }}</label><br />
+			</dt>
+			<dd><br>
+				<input name="forumlegend_right_width" type="number" min="0" id="forumlegend_right_width" value="{{ FORUMLEGEND_RIGHT_WIDTH }}" size="4" maxlength="4" />
+			</dd>
+		</dl>
+	</fieldset>
+
+	<fieldset class="submit-buttons">
+		<input class="button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
+		<input class="button2" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />
+		{{ S_FORM_TOKEN }}
+	</fieldset>
+
+</form>
+
+{% INCLUDE 'overall_footer.html' %}

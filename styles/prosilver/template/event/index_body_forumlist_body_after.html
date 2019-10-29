@@ -1,9 +1,15 @@
-<div class="responsive-hide">
-	<div class="legend-index navbar">
-		<div class="aligncenter valign">
-			{FORUM_UNREAD_IMG}&nbsp;{L_UNREAD_POSTS}&nbsp;&nbsp;
-			{FORUM_IMG}&nbsp;{L_NO_UNREAD_POSTS}&nbsp;&nbsp;
-			{FORUM_LOCKED_IMG}&nbsp;{L_FORUM_LOCKED}
+{% if FORUMLEGEND_ENABLED %}
+	<div class="responsive-hide">
+		<div class="legend-index navbar">
+			<div class="aligncenter valign">
+				{% if FORUMLEGEND_ICON_1 %}{{ FORUM_UNREAD_IMG }}&nbsp;{{ lang('UNREAD_POSTS') }}&nbsp;&nbsp;{% endif %}
+				{% if FORUMLEGEND_ICON_2 %}{{ FORUM_IMG }}&nbsp;{{ lang('NO_UNREAD_POSTS') }}&nbsp;&nbsp;{% endif %}
+				{% if FORUMLEGEND_ICON_3 %}{{ FORUM_UNREAD_LOCKED_IMG }}&nbsp;{{ lang('UNREAD_POSTS_LOCKED') }}&nbsp;&nbsp;{% endif %}
+				{% if FORUMLEGEND_ICON_4 %}{{ FORUM_LOCKED_IMG }}&nbsp;{{ lang('NO_UNREAD_POSTS_LOCKED') }}&nbsp;&nbsp;{% endif %}
+				{% if FORUMLEGEND_ICON_5 %}{{ FORUM_LINK_IMG }}&nbsp;{{ lang('FORUM_LINK') }}&nbsp;&nbsp;{% endif %}
+				{% if FORUMLEGEND_ICON_6 %}{{ FORUM_READ_SUBFORUM_IMG }}&nbsp;{{ lang('NO_UNREAD_POSTS_SUBFORUM') }}&nbsp;&nbsp;{% endif %}
+				{% if FORUMLEGEND_ICON_7 %}{{ FORUM_UNREAD_SUBFORUM_IMG }}&nbsp;{{ lang('UNREAD_POSTS_SUBFORUM') }}{% endif %}
+			</div>
 		</div>
 	</div>
-</div>
+{% endif %}

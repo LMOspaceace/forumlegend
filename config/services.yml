@@ -1,0 +1,9 @@
+services:
+    spaceace.forumlegend.listener:
+        class: spaceace\forumlegend\event\main_listener
+        arguments:
+            - '@config'
+            - '@template'
+            - '@user'
+        tags:
+            - { name: event.listener }

@@ -1,0 +1,22 @@
+<div class="responsive-hide">
+	<!-- IF SCRIPT_NAME == "viewforum" -->
+		<!-- IF S_DISPLAY_POST_INFO -->
+			<div class="clear-legend">
+				<h3 class="alignright">{L_FORUM_PERMISSIONS}</h3>
+				<h3 class="alignleft">{L_LEGEND}</h3>
+					<div class="howwide">
+						<dl class="alignleft howwide2"><span class="valign"><img src="{BOARD_URL}styles/Orange_BBEs/theme/images/icons/forum_unread.png" alt="{{ lang('UNREAD_POSTS') }}" title="{{ lang('UNREAD_POSTS') }}" class="valign" />&nbsp;{L_UNREAD_POSTS}</span><br /><span class="valign"><img src="{BOARD_URL}styles/Orange_BBEs/theme/images/icons/topic_unread_hot.png" alt="{{ lang('UNREAD_POSTS_HOT') }}" title="{{ lang('UNREAD_POSTS_HOT') }}" class="valign" />&nbsp;{L_UNREAD_POSTS_HOT}</span><br /><span class="valign"><img src="{BOARD_URL}styles/Orange_BBEs/theme/images/icons/topic_unread_locked.png" alt="{{ lang('UNREAD_POSTS_LOCKED') }}" title="{{ lang('UNREAD_POSTS_LOCKED') }}" class="valign" />&nbsp;{L_UNREAD_POSTS_LOCKED}&nbsp;</span></dl>
+					</div>
+					<div class="howwide">
+						<dl class="alignleft howwide2"><span class="valign"><img src="{BOARD_URL}styles/Orange_BBEs/theme/images/icons/forum_read.png" alt="{{ lang('NO_UNREAD_POSTS') }}" title="{{ lang('NO_UNREAD_POSTS') }}" class="valign" />&nbsp;{L_NO_UNREAD_POSTS}</span><br /><span class="valign"><img src="{BOARD_URL}styles/Orange_BBEs/theme/images/icons/topic_read_hot.png" alt="{{ lang('NO_UNREAD_POSTS_HOT') }}" title="{{ lang('NO_UNREAD_POSTS_HOT') }}" class="valign" />&nbsp;{L_NO_UNREAD_POSTS_HOT}</span><br /><span class="valign"><img src="{BOARD_URL}styles/Orange_BBEs/theme/images/icons/forum_read_locked.png" alt="{{ lang('NO_UNREAD_POSTS_LOCKED') }}" title="{{ lang('NO_UNREAD_POSTS_LOCKED') }}" class="valign" />&nbsp;{L_NO_UNREAD_POSTS_LOCKED}&nbsp;</span></dl>
+					</div>
+					<div class="howwide">
+						<dl class="alignleft howwide2"><span class="valign"><img src="{BOARD_URL}styles/Orange_BBEs/theme/images/icons/announce_read.png" alt="{{ lang('ICON_ANNOUNCEMENT') }}" title="{{ lang('ICON_ANNOUNCEMENT') }}" class="valign" />&nbsp;{L_ICON_ANNOUNCEMENT}</span><br /><span class="valign"><img src="{BOARD_URL}styles/Orange_BBEs/theme/images/icons/sticky_read.png" alt="{{ lang('ICON_STICKY') }}" title="{{ lang('ICON_STICKY') }}" class="valign" />&nbsp;{L_ICON_STICKY}</span><br /><span class="valign"><img src="{BOARD_URL}styles/Orange_BBEs/theme/images/icons/topic_moved.png" alt="{{ lang('TOPIC_MOVED') }}" title="{{ lang('TOPIC_MOVED') }}" class="valign" />&nbsp;{L_TOPIC_MOVED}&nbsp;</span></dl>
+					</div>
+				<div class="inner">
+					<dl class="alignright"><!-- BEGIN rules -->{rules.RULE}<br /><!-- END rules --></dl>
+				</div>
+			</div>
+		<!-- ENDIF -->
+	<!-- ENDIF -->
+</div>

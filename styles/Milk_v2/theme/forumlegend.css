@@ -5,14 +5,14 @@
 .alignleft {
 	float: left;
 	clear: left;
-	width: 50%;
+	width: 60%;
 }
 
 .alignright {
 	float: right;
 	clear: right;
 	text-align: right;
-	width: 50%;
+	width: 40%;
 }
 
 .legend-index.navbar {
@@ -43,20 +43,18 @@
 .legend-index span.imageset {
 	display: inline-block !important;
 	margin: 0;
-	padding: 32px 0 0 32px;
+	padding: 30px 0 0 30px;
 	width: 0;
 	height: 0;
 	overflow: hidden;
-	background-size: cover;
 }
 
 .clear-legend span.imageset {
 	display: inline-block !important;
-	margin: 0 0 2px 0;
-	padding: 32px 0 0 32px;
+	margin: 0;
+	padding: 30px 0 3px 30px;
 	width: 0;
 	height: 0;
 	overflow: hidden;
 	background-repeat: no-repeat;
-	background-size: cover;
 }

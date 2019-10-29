@@ -43,20 +43,19 @@
 .legend-index span.imageset {
 	display: inline-block !important;
 	margin: 0;
-	padding: 32px 0 0 32px;
-	width: 0;
-	height: 0;
-	overflow: hidden;
-	background-size: cover;
-}
-
-.clear-legend span.imageset {
-	display: inline-block !important;
-	margin: 0 0 2px 0;
-	padding: 32px 0 0 32px;
+	padding: 38px 0 0 38px;
 	width: 0;
 	height: 0;
 	overflow: hidden;
 	background-repeat: no-repeat;
-	background-size: cover;
+}
+
+.clear-legend span.imageset {
+	display: inline-block !important;
+	margin: 0;
+	padding: 38px 0 3px 38px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	background-repeat: no-repeat;
 }

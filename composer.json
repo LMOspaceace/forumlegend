@@ -1,31 +1,27 @@
 {
     "name": "spaceace/forumlegend",
     "type": "phpbb-extension",
-    "description": "Icon legend for forum and index",
-    "homepage": "http://www.livemembersonly.com",
-    "version": "1.0.1-RC2",
-    "time": "2015-03-13",
+    "description": "Icon legend for forum and index for phpBB 3.1  Gives members of your board a visual legend for the forum icons on the board index page as well as the viewforum pages.",
+    "homepage": "https://www.livemembersonly.com/",
+    "version": "2.0.0",
+    "time": "2017-12-17",
     "license": "GPL-2.0",
     "authors": [
         {
             "name": "spaceace",
             "email": "spaceace@livemembersonly.com",
-            "homepage": "http://www.livemembersonly.com",
-            "role": "Developer"
+            "homepage": "https://www.livemembersonly.com/",
+            "role": "Lead developer"
         }
     ],
     "require": {
-        "php": ">=5.3"
+        "php": ">=5.4.0",
+        "composer/installers": "~1.0"
     },
     "extra": {
         "display-name": "Forum Legend",
         "soft-require": {
-             "phpbb/phpbb": "3.1.*@dev"
-        },
-        "version-check": {
-            "host": "www.livemembersonly.com",
-            "directory": "/version",
-            "filename": "forumlegend.json"
+            "phpbb/phpbb": ">=3.1.4,<3.3.0@dev"
         }
     }
 }
